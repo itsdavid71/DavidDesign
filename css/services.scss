@@ -1,0 +1,70 @@
+
+
+.services-active {
+    position: relative;
+    color: #1b2735;
+    text-shadow: none;
+    &:before {
+        content: "";
+        position: absolute;
+        background: #ffffff;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        -webkit-transition: top 0.09s ease-in;
+    }
+}
+
+.services-graphic {
+    position: relative;
+}
+
+
+.services-graphic-table, .services-web-table {
+    color: white;
+    margin-top: 60px;
+    display: none;
+}
+.services-price {
+    font-weight: 400;
+}
+.services-name {
+    font-weight: 500;
+}
+
+.table-services-head {
+    background: white;
+    color: rgb(22, 24, 44);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+
+}
+table {
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    color: white;
+}
+td {
+    transition: .2s;
+}
+td:hover {
+    background: white;
+    box-shadow: 0px 0px 30px rgba(8, 8, 8, 0.2);
+    color: rgb(22, 24, 44);
+}
+
+td:hover table {
+    color: rgb(22, 24, 44);
+}
+table tbody tr:nth-child(odd) {
+    background: rgb(23, 30, 39)
+}
+table tbody tr:nth-child(even) {
+    background: rgb(32, 39, 48);
+}

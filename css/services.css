@@ -1,0 +1,78 @@
+.services-active {
+  position: relative;
+  color: #1b2735;
+  text-shadow: none;
+}
+
+.services-active:before {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.services-graphic {
+  position: relative;
+}
+
+.services-graphic-table, .services-web-table {
+  color: white;
+  margin-top: 60px;
+  display: none;
+}
+
+.services-price {
+  font-weight: 400;
+}
+
+.services-name {
+  font-weight: 500;
+}
+
+.table-services-head {
+  background: white;
+  color: #16182c;
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+}
+
+table {
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  color: white;
+}
+
+td {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+td:hover {
+  background: white;
+  -webkit-box-shadow: 0px 0px 30px rgba(8, 8, 8, 0.2);
+          box-shadow: 0px 0px 30px rgba(8, 8, 8, 0.2);
+  color: #16182c;
+}
+
+td:hover table {
+  color: #16182c;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #171e27;
+}
+
+table tbody tr:nth-child(even) {
+  background: #202730;
+}
+/*# sourceMappingURL=services.css.map */
