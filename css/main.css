@@ -1,10 +1,8 @@
 .main-logo {
   background: url("../img/fd.png") center center/contain no-repeat;
   padding: 50px;
-  display: none;
   position: relative;
-  left: 100px;
-  margin-top: 220px;
+  margin-top: 250px;
 }
 
 .welcome {
@@ -16,9 +14,7 @@
   font-weight: 600;
   text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
   position: relative;
-  opacity: 0;
-  right: 100px;
-  margin-top: 180px;
+  margin-top: 210px;
 }
 
 .welcome_2 {
@@ -29,8 +25,12 @@
   text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
   position: absolute;
   letter-spacing: 6px;
-  left: 84px;
+  left: 100px;
   top: 123px;
+}
+
+.main-text {
+  padding-bottom: 300px;
 }
 
 .button-white {
@@ -79,6 +79,57 @@
 }
 
 .button-white:hover:before {
+  top: 0px;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+}
+
+.button-white-sm {
+  display: block;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+  position: relative;
+  cursor: pointer;
+  border: 1px #ffffff solid;
+  padding: 15px 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button-white-sm:hover {
+  position: relative;
+  color: #1b2735;
+  text-shadow: none;
+}
+
+.button-white-sm:before {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+}
+
+.button-white-sm:hover:before {
   top: 0px;
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;

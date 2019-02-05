@@ -1,5 +1,5 @@
 $(function(){
-    $(document).pjax('.nav-menu-item', '.pjax-container', {fragment: '.pjax-container'});
+    $(document).pjax('.nav-menu-item, .link', '.pjax-container', {fragment: '.pjax-container'});
     $('.pjax-container').on('pjax:success', function() {
         $.pjax({
             url: window.location.href,

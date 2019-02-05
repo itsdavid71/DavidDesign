@@ -13,35 +13,35 @@
                             $('.nav-menu-item').removeClass("active");
                             $(this).addClass("active");
                         });
-                        $(document).ready(function() {
-                            function logo() {
-                            if ($('.loading-page').css('display','none')) {
-                            $('.main-logo').fadeIn(500);
-                            }  
-                        }
-                        function logoPos() {
-                            $('.main-logo').animate({
-                            left: 0
-                            }, 500);
-                        }
-                        function textPos() {
-                            $('.welcome').animate({
-                            right: 0,
-                            opacity: 1
-                            }, 500);
+                        // $(document).ready(function() {
+                        //     function logo() {
+                        //     if ($('.loading-page').css('display','none')) {
+                        //     $('.main-logo').fadeIn(500);
+                        //     }  
+                        // }
+                        // function logoPos() {
+                        //     $('.main-logo').animate({
+                        //     left: 0
+                        //     }, 500);
+                        // }
+                        // function textPos() {
+                        //     $('.welcome').animate({
+                        //     right: 0,
+                        //     opacity: 1
+                        //     }, 500);
 
-                        } function textPos_2() {
-                            $('.welcome_2').animate({
-                            right: 0,
-                            opacity: 1
-                            }, 500);
-                        }
-                        setTimeout(logo, 1000);
-                        setTimeout(logoPos, 2000);
-                        setTimeout(textPos, 2000);
-                        setTimeout(textPos_2, 2000);
-                        });
-                        $('.main-logo').css('display', 'block');
+                        // } function textPos_2() {
+                        //     $('.welcome_2').animate({
+                        //     right: 0,
+                        //     opacity: 1
+                        //     }, 500);
+                        // }
+                        // setTimeout(logo, 1000);
+                        // setTimeout(logoPos, 2000);
+                        // setTimeout(textPos, 2000);
+                        // setTimeout(textPos_2, 2000);
+                        // });
+                        // $('.main-logo').css('display', 'block');
                         
                     </script>
                 </header>
@@ -63,12 +63,10 @@
                             </div>
                         </div>
                         <div class="row justify-content-md-center">
-                            <div class="button-white">Список наших услуг</h1>
+                            <a href="services.php" class="link"><div class="button-white-sm">Мои услуги</div></a>
                         </div>
                     </div>
                 </main>
             </div>
         </div>
-        
-
 <?php require_once 'template/footer.php'?>

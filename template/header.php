@@ -19,7 +19,7 @@
         <div class="loading-logo"></div>
     </div>
     <div class="background">
-        <div class="background">
+        <div class="background-color">
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>

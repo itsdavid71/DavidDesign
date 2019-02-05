@@ -5,7 +5,13 @@ body {
   overflow: hidden;
 }
 .background {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  height: 100vh;
+  background: url('../img/background.jpg') center center no-repeat;
+  background-size: cover;
+}
+.background-color {
+  background: radial-gradient(ellipse at bottom, #1b2735d3 0%, #090a0fd7 100%);
+
   height: 100vh;
 }
 #stars {
@@ -179,4 +185,10 @@ h2 {
   font-weight: 600;
   text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
   position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit !important;
+  text-decoration: none !important;
 }
