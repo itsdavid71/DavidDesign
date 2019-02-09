@@ -192,3 +192,44 @@ h2 {
   color: inherit !important;
   text-decoration: none !important;
 }
+.socials {
+  display: flex;
+  justify-content: center;
+  padding-top: 280px;
+}
+.social {
+  padding: 40px 100px;
+  transition: .2s;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.vk {
+  background: url("../img/vk.svg") center center no-repeat;
+  background-size: 80px;
+  &:hover {
+    background: url("../img/vk-hover.svg") center center no-repeat;
+    background-size: 80px;
+  }
+}
+.behance {
+  background: url("../img/behance.svg") center center no-repeat;
+  background-size: 80px;
+  &:hover {
+    background: url("../img/behance-hover.svg") center center no-repeat;
+    background-size: 80px;
+  }
+  
+}
+.github {
+  background: url("../img/github.svg") center center no-repeat;
+  background-size: 80px;
+  &:hover {
+    background: url("../img/github-hover.svg") center center no-repeat;
+    background-size: 80px;
+  }
+}
+.social:hover {
+  transform: scale(1.1);
+}
