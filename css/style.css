@@ -222,4 +222,57 @@ h2 {
   color: inherit !important;
   text-decoration: none !important;
 }
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 280px;
+}
+
+.social {
+  padding: 40px 100px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.vk {
+  background: url("../img/vk.svg") center center no-repeat;
+  background-size: 80px;
+}
+
+.vk:hover {
+  background: url("../img/vk-hover.svg") center center no-repeat;
+  background-size: 80px;
+}
+
+.behance {
+  background: url("../img/behance.svg") center center no-repeat;
+  background-size: 80px;
+}
+
+.behance:hover {
+  background: url("../img/behance-hover.svg") center center no-repeat;
+  background-size: 80px;
+}
+
+.github {
+  background: url("../img/github.svg") center center no-repeat;
+  background-size: 80px;
+}
+
+.github:hover {
+  background: url("../img/github-hover.svg") center center no-repeat;
+  background-size: 80px;
+}
+
+.social:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 /*# sourceMappingURL=style.css.map */

@@ -16,10 +16,15 @@
                         });
                     </script>
                 </header>
+            
                 <div class="pjax-container">
                     <main>
                         <div class="portfolio">
-                            <h1>Portfolio</h1>
+                            <div class="socials">
+                                <a href="https://vk.com/fake.design" target="_blank"><div class="social vk"></div></a> 
+                                <a href="https://github.com/itsdavid71" target="_blank"><div class="social github"></div></a>
+                                <a href="https://www.behance.net/daviduccio" target="_blank"><div class="social behance"></div></a>
+                            </div>
                         </div>
                     </main>
                 </div>
