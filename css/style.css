@@ -231,12 +231,15 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 280px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social {
   padding: 40px 100px;
   -webkit-transition: .2s;
   transition: .2s;
+  margin-bottom: 30px;
   cursor: pointer;
   position: relative;
 }
