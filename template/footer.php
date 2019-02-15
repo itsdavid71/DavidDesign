@@ -1,4 +1,11 @@
         </div>
+        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+
+            <!-- VK Widget -->
+            <div id="vk_community_messages"></div>
+            <script type="text/javascript">
+            VK.Widgets.CommunityMessages("vk_community_messages", 152858892, {expanded: "1",tooltipButtonText: "Есть вопрос?"});
+        </script>
         <script src="lib/jquery.pjax.js"></script>
         <script src="https:////cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
