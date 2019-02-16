@@ -1,18 +1,27 @@
 * {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-body {
-  overflow: hidden;
+.container  {
+  // overflow-x: hidden;
+  box-sizing: border-box;
+  padding-bottom: 20px;
 }
 .background {
-  height: 100vh;
+  min-height: 100vh;
   background: url('../img/background.jpg') center center no-repeat;
   background-size: cover;
 }
 .background-color {
+  background: #0a0f16e0;
+  background: -moz-radial-gradient(ellipse at bottom, #1b2735d3 0%, #090a0fd7 100%);
+  background: -webkit-radial-gradient(ellipse at bottom, #1b2735d3 0%, #090a0fd7 100%);
+  background: -o-radial-gradient(ellipse at bottom, #1b2735d3 0%, #090a0fd7 100%);
+  background: -ms-radial-gradient(ellipse at bottom, #1b2735d3 0%, #090a0fd7 100%);
   background: radial-gradient(ellipse at bottom, #1b2735d3 0%, #090a0fd7 100%);
 
-  height: 100vh;
+  min-height: 100vh;
 }
 #stars {
   position: absolute;
@@ -186,6 +195,24 @@ h2 {
   text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
   position: relative;
 }
+h3 {
+  color: white;
+  text-align: center;
+  padding: 70px 0 40px 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.burger-field {
+  position: fixed;
+  padding: 60px;
+  right: 0;
+  z-index: 10002123123123;
+}
 
 .link {
   text-decoration: none;
@@ -195,7 +222,6 @@ h2 {
 .socials {
   display: flex;
   justify-content: center;
-  padding-top: 280px;
   flex-wrap: wrap;
 }
 .social {
@@ -234,4 +260,81 @@ h2 {
 }
 .social:hover {
   transform: scale(1.1);
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin: 10px;
+}
+
+.steps {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps-link {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.faq-field {
+  color: #fff;
+  font-size: 20px;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+
+}
+.question {
+  font-weight: 500;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -20px;
+  }
+}
+.answer {
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 202px;
+}
+.faq-section {
+  margin: 40px 0;
+}
+.faq-section:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+
+.mt {
+  margin-top: 150px;
+}
+
+th {
+  padding: 20px;
+}
+
+td {
+  padding: 12px;
 }

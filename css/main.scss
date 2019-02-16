@@ -67,12 +67,26 @@
         z-index: -1;
         -webkit-transition: top 0.09s ease-in;
         transition: ease-in-out .2s;
-
     }
     &:hover:before {
        top: 0px;
        transition: ease-in-out .2s;
-
+    }
+    &.button-before {
+        color: #1b2735;
+    }
+    &.button-before:before {
+        content: "";
+        position: absolute;
+        background: #ffffff;
+        bottom: 0;
+        text-shadow: none;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        -webkit-transition: top 0.09s ease-in;
+        transition: ease-in-out .2s;
     }
 }
 .button-white-sm {
@@ -116,3 +130,4 @@
        transition: ease-in-out .2s;
     }
 }
+

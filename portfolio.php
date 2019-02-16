@@ -20,10 +20,31 @@
                 <div class="pjax-container">
                     <main>
                         <div class="portfolio">
+                        <h2>Graphic Examples</h2>
                             <div class="socials">
                                 <a href="https://vk.com/fake.design" target="_blank"><div class="social vk"></div></a> 
-                                <a href="https://github.com/itsdavid71" target="_blank"><div class="social github"></div></a>
                                 <a href="https://www.behance.net/daviduccio" target="_blank"><div class="social behance"></div></a>
+                            </div>
+                            <h2>Web Examples</h2>
+                            <div class="">
+                                <a href="https://github.com/itsdavid71" target="_blank"><div class="social github"></div></a>
+                            </div>
+                            <div class="projects">
+                                <a href="https://travel.itsdavid.ru" class="link" target="_blank">
+                                    <div class="button-white-sm project">
+                                        Example 1
+                                    </div>
+                                </a>
+                                <a href="https://moscow.itsdavid.ru" class="link" target="_blank">
+                                    <div class="button-white-sm project">
+                                        Example 2
+                                    </div>
+                                </a>
+                                <a href="https://faststart.itsdavid.ru" class="link" target="_blank">
+                                    <div class="button-white-sm project">
+                                        Example 3
+                                    </div>
+                                </a>           
                             </div>
                         </div>
                     </main>

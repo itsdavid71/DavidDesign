@@ -3,7 +3,7 @@
     display: none;
   }
   .mobile-nav {
-    background: rgba(0, 0, 0, 0.9);
+    background: radial-gradient(ellipse at bottom, #1b2735f5 0%, #090a0ff5 100%);
     width: 100%;
     position: fixed;
     height: 100vh;
@@ -35,9 +35,28 @@
     -webkit-transition: .2s;
     transition: .2s;
     text-decoration: none;
+    position: relative;
   }
   .mobile-nav-field a:hover {
-    background: #1a1a1a;
+    background: rgba(255, 255, 255, 0.055);
+  }
+  .mobile-nav-field a:before {
+    content: "";
+    position: absolute;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    top: 75%;
+    background: white;
+    border-radius: 0;
+    width: 50px;
+    padding: 0 10px;
+    height: 3px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    -webkit-box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.3);
   }
   .show {
     display: block;
@@ -57,8 +76,8 @@
   }
   .burger {
     position: fixed;
-    right: 50px;
-    top: 0px;
+    right: 35px;
+    top: -10px;
     padding: 40px;
     z-index: 1000000;
     -webkit-box-sizing: border-box;
@@ -67,143 +86,46 @@
   }
   .burger .burger-stick {
     position: absolute;
-    width: 50px;
+    width: 35px;
     margin: 20px;
-    height: 4px;
+    height: 3px;
     border-radius: 15px;
     margin-bottom: 6px;
     background: white;
   }
   .burger .burger-stick:nth-child(1) {
-    top: 30px;
+    top: 32px;
   }
   .burger .burger-stick:nth-child(2) {
-    top: 50px;
+    top: 24px;
   }
-  /*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-  #menuToggle {
-    display: block;
-    position: relative;
-    top: 50px;
-    left: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-     -ms-user-select: none;
-         user-select: none;
-  }
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
-    -webkit-touch-callout: none;
-  }
-  /*
-    * Just a quick hamburger
-    */
-  #menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-    -webkit-transform-origin: 4px 0px;
-            transform-origin: 4px 0px;
-    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-  #menuToggle span:first-child {
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-  }
-  #menuToggle span:nth-last-child(2) {
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
-  }
-  /* 
-    * Transform all the slices of hamburger
-    * into a crossmark.
-    */
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    -webkit-transform: rotate(45deg) translate(-2px, -1px);
-            transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-  }
-  /*
-    * But let's hide the middle one.
-    */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-            transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  /*
-    * Ohyeah and the last one should go the other direction
-    */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    -webkit-transform: rotate(-45deg) translate(0, -1px);
-            transform: rotate(-45deg) translate(0, -1px);
-  }
-  /*
-    * Make this absolute positioned
-    * at the top left of the screen
-    */
-  #menu {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background: #ededed;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-  #menu li {
-    padding: 10px 0;
-    font-size: 22px;
-  }
-  /*
-    * And let's slide it in from the left
-    */
-  #menuToggle input:checked ~ ul {
-    -webkit-transform: none;
-            transform: none;
+  h3 {
+    font-size: 25px;
   }
 }
 
 .toggleClassTop {
   top: 32px !important;
+}
+
+@media (max-width: 1200px) {
+  .welcome_2 {
+    left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-text {
+    display: none;
+  }
+  .stars, .stars2, .stars3 {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-logo {
+    margin-bottom: 100px;
+  }
 }
 /*# sourceMappingURL=media.css.map */

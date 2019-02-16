@@ -19,7 +19,15 @@
                 <div class="pjax-container">
                     <main>
                         <div class="guide">
-                            <h1>Guide</h1>
+                            <div class="steps">
+                                <h3 class="mt">Для оформления заказа напиши мне Вконтакте</h3>
+                                <a href="https://vk.cc/92feIx" class="link">
+                                    <div class="button-white-sm steps-link">
+                                        Написать
+                                    </div>
+                                </a>
+                            </div>
+                            
                         </div>
                     </main>
                 </div>

@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.loading-page').fadeOut(300);
   
-  $('.burger').click(function() {
+  $('.burger-field').click(function() {
     $('.mobile-nav').animate({width:'toggle'}, 350);
     if ($('.mobile-nav').css('display') == 'block'){
       console.log(123);

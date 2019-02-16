@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-md-center">
+                        <div class="row justify-content-md-center jcc">
                             <a href="services.php" class="link"><div class="button-white-sm">Мои услуги</div></a>
                         </div>
                     </div>

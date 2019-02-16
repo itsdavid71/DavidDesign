@@ -14,6 +14,7 @@
                             $('.nav-menu-item').removeClass("active");
                             $(this).addClass("active");
                         });
+                        
                     </script>
                 </header>
                 <div class="pjax-container">
@@ -103,13 +104,18 @@
 
                 $('.services-graphic').click(function() {
                     $('.services-web-table').fadeOut(0);
-                    $('.services-graphic-table').fadeToggle(300);
+                    $('.services-graphic-table').fadeIn(300);
+
                 });
 
                 $('.services-web').click(function() {
-                    $('.services-web-table').fadeToggle(300);
+                    $('.services-web-table').fadeIn(300);
                     $('.services-graphic-table').fadeOut(0);
                 });
+                $('.button-white').click(function() {
+                    $('.button-white').removeClass('button-before');
+                    $(this).toggleClass('button-before');
+                })
             </script>
         </main>
     </div>

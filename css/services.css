@@ -52,18 +52,6 @@ table {
   color: white;
 }
 
-td {
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-td:hover {
-  background: white;
-  -webkit-box-shadow: 0px 0px 30px rgba(8, 8, 8, 0.2);
-          box-shadow: 0px 0px 30px rgba(8, 8, 8, 0.2);
-  color: #16182c;
-}
-
 td:hover table {
   color: #16182c;
 }
@@ -74,5 +62,17 @@ table tbody tr:nth-child(odd) {
 
 table tbody tr:nth-child(even) {
   background: #202730;
+}
+
+tbody tr {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+tbody tr:hover {
+  background: white !important;
+  -webkit-box-shadow: 0px 0px 30px rgba(8, 8, 8, 0.2);
+          box-shadow: 0px 0px 30px rgba(8, 8, 8, 0.2);
+  color: #16182c;
 }
 /*# sourceMappingURL=services.css.map */

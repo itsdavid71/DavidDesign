@@ -19,16 +19,30 @@
                 <div class="pjax-container">
                     <main>
                         <div class="faq">
-                            <h1>FAQ</h1>
+                            <h2>Частые вопросы</h2>
+                            <div class="faq-field">
+                                <div class="faq-section">
+                                    <span class="question">Есть ли предоплата?</span><br>
+                                    <span class="answer">Предоплата 50%</span>
+                                </div>
+                                <div class="faq-section">
+                                    <span class="question">Можно ли получить PSD?</span><br>
+                                    <span class="answer">PSD продаётся за двойную цену</span>
+                                <div class="faq-section">
+                                    <span class="question">Оплата?</span><br>
+                                    <span class="answer">Qiwi / Банковская карта</span>
+                                </div>
+                                <div class="faq-section">
+                                    <span class="question">Скидки?</span><br>
+                                    <span class="answer">Постоянным покупателем делаю скидки до 20%</span>
+                                </div>
+                                <div class="faq-section">
+                                    <span class="question">Сроки?</span><br>
+                                    <span class="answer">Всё зависит от объема работы</span>
+                                </div>
+                            </div>
                         </div>
                     </main>
                 </div>
             </div>
-
-
-    
-
-    
-
-    
 <?php require_once 'template/footer.php'?>

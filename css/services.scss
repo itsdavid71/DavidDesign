@@ -50,14 +50,6 @@ table {
     position: relative;
     color: white;
 }
-td {
-    transition: .2s;
-}
-td:hover {
-    background: white;
-    box-shadow: 0px 0px 30px rgba(8, 8, 8, 0.2);
-    color: rgb(22, 24, 44);
-}
 
 td:hover table {
     color: rgb(22, 24, 44);
@@ -67,4 +59,12 @@ table tbody tr:nth-child(odd) {
 }
 table tbody tr:nth-child(even) {
     background: rgb(32, 39, 48);
+}
+tbody tr  {
+    transition: .2s;
+}
+tbody tr:hover {
+    background: white !important; 
+    box-shadow: 0px 0px 30px rgba(8, 8, 8, 0.2);
+    color: rgb(22, 24, 44);
 }
